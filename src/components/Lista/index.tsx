@@ -4,7 +4,7 @@ import ITarefa from '../../types/tarefa';
 
 interface Props {
     tarefas: ITarefa[],
-    selecionaTarefa: (tarefaSelecionada: ITarefa) => void // Não retorna nada
+    selecionaTarefa: (tarefaSelecionada: ITarefa) => void // Não retorna nada, ele vai modificar o selecionado e o tarefas, mas não vai trazer retorno, e o void informa isso como tipagem. Como tipar o selecionaTarefa como uma função? Tipando seu parâmetro e seu retorno.
 }
 
 // Function components
